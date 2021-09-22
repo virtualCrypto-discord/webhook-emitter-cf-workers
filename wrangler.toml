@@ -2,8 +2,8 @@ name = "webhook-emitter-cf-workers"
 type = "javascript"
 zone_id = ""
 account_id = ""
-route = ""
-workers_dev = true
+routes = ["https://webhook-emitter.vcrypto.sumidora.com"]
+workers_dev = false
 vars = { USER_AGENT = "webhook-emitter-cf-workers/0.1 (+https://github.com/virtualCrypto-discord/webhook-emitter-cf-workers)" }
 
 [build]
