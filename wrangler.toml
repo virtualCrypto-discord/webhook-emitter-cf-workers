@@ -1,9 +1,10 @@
-name = "webhook-emitter-workers"
+name = "webhook-emitter-cf-workers"
 type = "javascript"
 zone_id = ""
 account_id = ""
 route = ""
 workers_dev = true
+vars = { USER_AGENT = "webhook-emitter-cf-workers/0.1 (+https://github.com/virtualCrypto-discord/webhook-emitter-cf-workers)" }
 
 [build]
 command = "yarn install && yarn run build"
