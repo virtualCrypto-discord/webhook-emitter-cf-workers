@@ -4,7 +4,7 @@ function buildRequest(url: string, blob: Blob, ed25519: string, timestamp: strin
   headers.append("X-Signature-Ed25519", ed25519)
   headers.append("X-Signature-Timestamp", timestamp);
   headers.append("Content-Type", "application/json");
-  headers.append("User-Agent", USER_AGENT)
+  headers.append("User-Agent", USER_AGENT);
   return new Request(url, {
     method: "POST",
     body: blob,
